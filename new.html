@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetBytes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="nav-bar">
+        <h1 class="logo" style="color: orange;">🍽️BudgetBytes</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+    </div> 
+    <!-- header-->
+    <div class="container">
+        <p style="font-size: 70px;">This is 
+            <span id="text" style="color: orange;"></span><p>
+        <p style="font-size: 20px;">Discover local affordable dining experiences.</p>
+    </div>
+    <!-- filters section -->
+    <div class="filter-section">
+        <div class="header">
+            <h2>Filters</h2>
+            <button class="filter-button" onclick="clearFilters()">Clear-All</button>
+        </div>
+        <div class="filter-grid">
+            <div class="filter-group">
+                <label class="filterlabel">Price Range</label>
+                <select class="filter-select">
+                  <option value="All Prices">All Prices</option>
+                  <option value="$">Under $10</option>
+                  <option value="$$">Under $20</option>
+                  <option value="$$$">Under $30</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filterlabel">Cuisine</label>
+                <select class="filter-select">
+                  <option value="All Cuisine">All Cuisine</option>
+                  <option value="Cafe">Cafe</option>
+                  <option value="Indian">Indian</option>
+                  <option value="Japanese">Japanese</option>
+                  <option value="Italian">Italian</option>
+                  <option value="Fast Food">Fast Food</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filterlabel">Distance</label>
+                <select class="filter-select">
+                  <option value="Infinity">All Distances</option>
+                  <option value="1">Under 1 km</option>
+                  <option value="5">Under 5 km</option>
+                  <option value="10">Under 10 km</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filterlabel">Rating</label>
+                <select class="filter-select">
+                  <option value="0">All Ratings</option>
+                  <option value="4.5">4.5+ Stars</option>
+                  <option value="4.0">4.0+ Stars</option>
+                  <option value="3.0">3.0+ Stars</option>
+                </select>
+              </div>              
+        </div>
+    </div>
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search Restaurants, Cuisines, Dishes ... ">
+    </div>
+
+    <div class="restaurants">
+        <table border="1" style="width: 100%; text-align: left;">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price Range</th>
+                <th>Cuisine</th>
+                <th>Distance (km)</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody id="restaurantTableBody">
+              <!-- Rows will be populated here -->
+            </tbody>
+          </table>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="new.j"></script>
+    <script src="restaurant.js"></script>
+</body>
+</html>
