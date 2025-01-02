@@ -1,0 +1,227 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%); */
+        /* background-image: linear-gradient(315deg, #6a82fb 0%, #fc5c7d 74%); */
+
+        background-image: linear-gradient(315deg, #6a90f5 0%, #f78c9b 74%);
+
+    }
+
+    div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-image: linear-gradient(135deg, #4e6d7a, #2c3e50);
+
+        height: 600px;
+        width: 600px;
+        border-left: 10px;
+        border: solid;
+        border-color: rgb(0, 0, 0);
+
+
+        border-radius: 30px;
+
+
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+
+        color: #9bbdca;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+
+
+    }
+
+    form {
+
+
+
+        background-image: linear-gradient(135deg, #6f8c97, #4a6573);
+
+        height: 400;
+        width: 400;
+
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: solid;
+        border-radius: 25px;
+
+    }
+
+    .username,
+    .pass {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 21px;
+        margin-right: 231px;
+
+        color: #f0f8ff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+
+
+
+
+
+    }
+    #username::placeholder,
+    #pass::placeholder{
+        color: #6c757d;
+
+    }
+
+    #username{
+        height: 35;
+        width: 350px;
+        border: solid;
+        border-color: black;
+        border-radius: 10px;
+        padding-left: 13;
+        font-family: 'Poppins', sans-serif;
+        
+
+        
+        color: #333;
+        opacity: 0.8;
+
+        
+    }
+
+    #pass {
+        height: 35;
+        width: 350px;
+        border: solid;
+        border-radius: 10px;
+        padding-left: 13;
+        border-color: black;
+        font-family: 'Poppins', sans-serif;
+
+       
+        color: #333;
+
+        opacity: 0.8;
+
+
+
+    }
+
+    .styled-button {
+        margin-top: 22px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+        width: 150px;
+    }
+
+    .styled-button:hover {
+        background: linear-gradient(135deg, #2575fc, #6a11cb);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .styled-button:active {
+        transform: translateY(0);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        body {
+
+            flex-direction: column;
+            padding: 20px;
+
+        }
+
+        div {
+
+            width: 100%;
+            border-radius: 20px;
+            padding: 10px;
+
+        }
+
+        form {
+            width: 90%;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        #username,
+        #pass {
+            width: 90%;
+            font-size: 16px;
+        }
+
+        .styled-button {
+            width: 80%;
+            font-size: 14px;
+        }
+
+        .username,
+        .pass {
+            font-size: 20px;
+        }
+    }
+
+    span {
+        color: #c4d9e8;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+
+    }
+</style>
+
+<body>
+    <div>
+        <p>Welcome Back! Login to your <span>Budgetbytes</span> account</p>
+        <form action="new.html" method="get">
+
+            <label class="username" for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder=" enter your username">
+            <label class="pass" for="pass">Password</label>
+            <input type="text" id="pass" name="password" placeholder=" enter your password">
+            <button class="styled-button">submit</button>
+        </form>
+    </div>
+
+</body>
+<script src="login.js"></script>
+
+</html>
